@@ -2,7 +2,11 @@ package com.accountbook.dao;
 
 import com.accountbook.entity.TestEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
+@Mapper
 public interface TestMapper extends BaseMapper<TestEntity> {
-    TestEntity getById(String Id);
+    List<TestEntity> getAll();
 }
