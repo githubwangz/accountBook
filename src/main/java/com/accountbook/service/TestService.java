@@ -1,6 +1,6 @@
 package com.accountbook.service;
 
-import com.accountbook.entity.TestEntity;
+import com.accountbook.pojo.Test;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -11,8 +11,8 @@ import java.util.List;
  * @author makejava
  * @since 2022-06-10 20:37:47
  */
-public interface TestService extends IService<TestEntity> {
+public interface TestService extends IService<Test> {
 
-    List<TestEntity> getAll();
+    List<Test> getAll();
 
 }

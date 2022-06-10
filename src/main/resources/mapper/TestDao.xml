@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.accountbook.dao.TestMapper">
-    <select id="getAll" resultType="com.accountbook.entity.TestEntity">
+<mapper namespace="com.accountbook.dao.TestDao">
+    <select id="getAll" resultType="com.accountbook.pojo.Test">
         select *
         from test
     </select>

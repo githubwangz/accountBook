@@ -1,4 +1,4 @@
-package com.accountbook.entity;
+package com.accountbook.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -13,7 +13,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @TableName("test")
-public class TestEntity {
+public class Test {
     @TableId(type = IdType.UUID)
     //用户id
     private String Id;
