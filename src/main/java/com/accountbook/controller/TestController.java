@@ -1,7 +1,7 @@
 package com.accountbook.controller;
 
 import com.accountbook.common.ResultMsgEnum;
-import com.accountbook.pojo.Test;
+import com.accountbook.entity.Test;
 import com.accountbook.service.TestService;
 import com.accountbook.common.Result;
 import com.accountbook.utils.MD5Util;

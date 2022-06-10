@@ -1,6 +1,6 @@
 package com.accountbook.service;
 
-import com.accountbook.pojo.Test;
+import com.accountbook.entity.Test;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

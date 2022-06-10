@@ -1,7 +1,7 @@
 package com.accountbook.service.impl;
 
 import com.accountbook.dao.TestDao;
-import com.accountbook.pojo.Test;
+import com.accountbook.entity.Test;
 import com.accountbook.service.TestService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

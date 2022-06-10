@@ -1,6 +1,6 @@
 package com.accountbook.dao;
 
-import com.accountbook.pojo.Test;
+import com.accountbook.entity.Test;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

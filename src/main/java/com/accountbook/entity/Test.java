@@ -1,4 +1,4 @@
-package com.accountbook.pojo;
+package com.accountbook.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
