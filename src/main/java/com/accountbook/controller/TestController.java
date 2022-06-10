@@ -1,7 +1,10 @@
 package com.accountbook.controller;
 
+import com.accountbook.common.ResultMsgEnum;
 import com.accountbook.pojo.Test;
 import com.accountbook.service.TestService;
+import com.accountbook.common.Result;
+import com.accountbook.utils.MD5Util;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -24,18 +27,19 @@ public class TestController {
      * @return 随意返回值
      */
     @GetMapping("/test")
-    public String test() {
-        return "hello world";
+    public Result<String> test() {
+        String a = MD5Util.getStringMD5("123456");
+        return Result.error(ResultMsgEnum.FAIL.getCode(), ResultMsgEnum.FAIL.getMessage());
     }
 
     @PostMapping("/testMybatis")
     public List<Test> testMybatis(@RequestBody Test testEntity) {
         QueryWrapper<Test> queryWrapper = new QueryWrapper<>();
-        Map<String,Object> testMap = JSON.parseObject(JSON.toJSONString(testEntity),new TypeReference<Map<String,Object>>(){
+        Map<String, Object> testMap = JSON.parseObject(JSON.toJSONString(testEntity), new TypeReference<Map<String, Object>>() {
         });
         testMap.forEach(
-                (k,v)->{
-                    queryWrapper.eq(k,v);
+                (k, v) -> {
+                    queryWrapper.eq(k, v);
                 }
         );
         List<Test> result = testService.list(queryWrapper);
