@@ -11,3 +11,5 @@ spring:
 mybatis-plus:
   mapper-locations: mapper/*.xml
   type-aliases-package: com.accountbook.entity
+logging:
+  config: classpath:config/log4j2.xml
