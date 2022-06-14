@@ -30,6 +30,7 @@ public class MD5Util {
 
     /**
      * 获取文件md5值.
+     *
      * @param file the file
      * @return md5串
      * @throws IOException
@@ -130,27 +131,5 @@ public class MD5Util {
         } catch (Exception e) {
         }
         return sb.toString();
-    }
-
-    /**
-     * The main method.
-     *
-     * @param args the arguments
-     */
-    public static void main(String[] args) {
-
-        long beginTime = System.currentTimeMillis();
-        File fileZIP = new File("D:\\BaiduNetdiskDownload\\test1.avi");
-
-        String md5 = "";
-        try {
-            md5 = getFileMD5String(fileZIP);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        long endTime = System.currentTimeMillis();
-        System.out.println("MD5:" + md5 + "\n time:" + ((endTime - beginTime)) + "ms");
-
-        System.out.println(getStringMD5("111111"));
     }
 }
